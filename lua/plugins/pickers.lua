@@ -1,0 +1,5 @@
+require 'mini.pick'.setup()
+vim.keymap.set('n', '<leader>e', ':Pick files<CR>')
+vim.keymap.set('n', '<leader>g', ':Pick grep_live<CR>')
+vim.keymap.set('n', '<leader>b', ':Pick buffers<CR>')
+vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
