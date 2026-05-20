@@ -19,6 +19,7 @@ vim.pack.add({
 	"https://github.com/catppuccin/nvim.git",
 	"https://github.com/neovim/nvim-lspconfig.git",
 	"https://github.com/nvim-mini/mini.pick.git",
+	"https://github.com/nvim-treesitter/nvim-treesitter.git",
 })
 vim.keymap.set('n', '<Leader>p', function()
 	vim.pack.update(nil, {})

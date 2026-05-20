@@ -32,6 +32,7 @@ local function format()
 		vim.lsp.buf.format({
 			bufnr = buf,
 		})
+		vim.cmd.write()
 	end
 	vim.cmd("checktime")
 end
