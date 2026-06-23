@@ -1,4 +1,4 @@
-require("nvim-treesitter").install({
+local langs = {
 	"go",
 	"gomod",
 	"gosum",
@@ -8,18 +8,23 @@ require("nvim-treesitter").install({
 	"vimdoc",
 	"markdown",
 	"markdown_inline",
-})
+	"html",
+	"yaml",
+}
+
+require("nvim-treesitter").install(langs)
 vim.api.nvim_create_autocmd("FileType", {
 	callback = function(args)
-		local excludes = {
-			minipick = true
-		}
-
 		local ft = vim.bo[args.buf].filetype
-		if excludes[ft] == true then
-			return
-		end
 		local lang = vim.treesitter.language.get_lang(ft) or ft
+
+		local found = false
+		for _, v in ipairs(langs) do
+			if v == lang then
+				found = true
+			end
+		end
+		if found == false then return end
 
 		local ok = pcall(vim.treesitter.language.add, lang)
 		if not ok then
