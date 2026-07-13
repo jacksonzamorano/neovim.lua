@@ -1,19 +1,19 @@
 {
   "plugins": {
     "gitsigns.nvim": {
-      "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
+      "rev": "eb60cc7b94c46005237fd34170d76f3a089a90aa",
       "src": "https://github.com/lewis6991/gitsigns.nvim.git"
     },
     "mini.pick": {
-      "rev": "26f94e9c84f529d713de00b900c0a307ca260f35",
+      "rev": "04e73ab07222508361095bb6e27621b315e6b9f1",
       "src": "https://github.com/nvim-mini/mini.pick.git"
     },
     "nvim": {
-      "rev": "0303a7208dba448c459767486a38a6ec05c4216b",
+      "rev": "05e8787020dcfdb937bf2ff23855ea2415b4e072",
       "src": "https://github.com/catppuccin/nvim.git"
     },
     "nvim-lspconfig": {
-      "rev": "9573948c38bfabeec353ae7dd7d3ffec4c506a6b",
+      "rev": "d5b6e3db4c17b0146f63a2fc47e2027a754b2cb1",
       "src": "https://github.com/neovim/nvim-lspconfig.git"
     },
     "nvim-treesitter": {
@@ -21,7 +21,7 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter.git"
     },
     "nvim-web-devicons": {
-      "rev": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c",
+      "rev": "09d1324e264c6950262dbe02a9bce2933a6800db",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "plenary.nvim": {
@@ -33,7 +33,7 @@
       "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
     },
     "telescope.nvim": {
-      "rev": "7d324792b7943e4aa16ad007212e6acc6f9fe335",
+      "rev": "427b576c16792edad01a92b89721d923c19ad60f",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "tokyonight.nvim": {

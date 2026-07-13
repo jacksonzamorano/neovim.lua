@@ -15,16 +15,6 @@ vim.g.mapleader = ' '
 require('config.general_keys')
 
 -- Packages
-vim.pack.add({
-	"https://github.com/catppuccin/nvim.git",
-	"https://github.com/neovim/nvim-lspconfig.git",
-	"https://github.com/nvim-treesitter/nvim-treesitter.git",
-	"https://github.com/lewis6991/gitsigns.nvim.git",
-	"https://github.com/nvim-telescope/telescope.nvim",
-	"https://github.com/nvim-lua/plenary.nvim",
-	"https://github.com/nvim-telescope/telescope-fzf-native.nvim",
-	"https://github.com/nvim-tree/nvim-web-devicons",
-})
 vim.api.nvim_create_autocmd('PackChanged', {
 	callback = function(ev)
 		local spec = ev.data.spec
@@ -35,6 +25,16 @@ vim.api.nvim_create_autocmd('PackChanged', {
 			vim.system({ 'make' }, { cwd = path }):wait()
 		end
 	end
+})
+vim.pack.add({
+	"https://github.com/catppuccin/nvim.git",
+	"https://github.com/neovim/nvim-lspconfig.git",
+	"https://github.com/nvim-treesitter/nvim-treesitter.git",
+	"https://github.com/lewis6991/gitsigns.nvim.git",
+	"https://github.com/nvim-telescope/telescope.nvim",
+	"https://github.com/nvim-lua/plenary.nvim",
+	"https://github.com/nvim-telescope/telescope-fzf-native.nvim",
+	"https://github.com/nvim-tree/nvim-web-devicons",
 })
 vim.keymap.set('n', '<Leader>p', function()
 	vim.pack.update(nil, {})
